@@ -1,0 +1,476 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="952.8,8200" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ueabf="clr-namespace:UiPath.Excel.Activities.Business.Filter;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business.Filter</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="963.2,8135.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="MODULO 2 - LECTURA DE TABLAS" sap:VirtualizedContainerService.HintSize="900.8,8023.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+        <Variable x:TypeArguments="x:String" Name="Condicion1" />
+        <Variable x:TypeArguments="x:String" Name="FechaAyer" />
+        <Variable x:TypeArguments="sd:DataTable" Name="lectura" />
+        <Variable x:TypeArguments="x:String" Name="resultadoconversion" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: INTERbanking - ( Build 76.2.128)" sap:VirtualizedContainerService.HintSize="838.4,7586.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="28d0787c-beb5-4c7a-9900-c68a054d5677" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="804.8,7369.6" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NRO' ReferenceIdx='0' Name='NRO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='DESCRIPCIÓN' ReferenceIdx='1' Name='DESCRIPCIÓN'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='TAMAÑO (BYTES)' ReferenceIdx='2' Name='TAMAÑO (BYTES)'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='FECHA Y HORA' ReferenceIdx='3' Name='FECHA Y HORA'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ESTADO' ReferenceIdx='4' Name='ESTADO'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='ACCIONES' ReferenceIdx='5' Name='ACCIONES' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-6' ReferenceIdx='6' Name='Column-6' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-7' ReferenceIdx='7' Name='Column-7' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='NRO' attr='fulltext' /&gt;&lt;column name='DESCRIPCIÓN' attr='fulltext' /&gt;&lt;column name='TAMAÑO (BYTES)' attr='fulltext' /&gt;&lt;column name='FECHA Y HORA' attr='fulltext' /&gt;&lt;column name='ESTADO' attr='fulltext' /&gt;&lt;column name='ACCIONES' attr='fulltext' /&gt;&lt;column name='Column-6' attr='fulltext' /&gt;&lt;column name='Column-7' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="742.4,157.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="28d0787c-beb5-4c7a-9900-c68a054d5677" Version="V3">
+                <uix:NExtractData.Target>
+                  <uix:TargetAnchorable DesignTimeRectangle="104, 417, 1709, 1150" DesignTimeScaleFactor="1.25" FriendlyName="'v_valor[v_valor.length]…'" FullSelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tableRow='7' tag='TABLE' /&gt;" Guid="e88efba7-c388-4717-8ba9-94e957899dc6" InformativeScreenshot="08bb36b053ec82f6c1392a4ea2b1b45e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INTERbanking - ( Build 76.2.128)' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NExtractData.Target>
+              </uix:NExtractData>
+              <ui:OutputDataTable Text="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="742.4,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" />
+              <ui:WriteRange AddHeaders="True" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="742.4,116" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Hoja1" WorkbookPath="Herramientas\tabla.xlsx">
+                <ui:WriteRange.StartingCell>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:WriteRange.StartingCell>
+              </ui:WriteRange>
+              <Sequence DisplayName="fila 1" sap:VirtualizedContainerService.HintSize="742.4,6780" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="Condición2" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="680,2057.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="592,1812" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ResizeWindow="None" WorkbookPath="Herramientas\tabla.xlsx">
+                    <ueab:ExcelApplicationCard.Body>
+                      <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                        </ActivityAction.Argument>
+                        <Sequence sap:VirtualizedContainerService.HintSize="558.4,1542.4" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1087.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:FilterX ClearFilter="False" ColumnName="DESCRIPCIÓN" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,170.4" sap2010:WorkflowViewState.IdRef="FilterX_1" Range="[Excel.Sheet(&quot;Hoja1&quot;)]">
+                              <ueab:FilterX.FilterArgument>
+                                <ueabf:FilterArgument Mode="Basic">
+                                  <ueabf:FilterArgument.AdvancedFiltersArgument>
+                                    <ueabf:AdvancedFilterArgument LogicalOperator="And">
+                                      <ueabf:AdvancedFilterArgument.Condition1>
+                                        <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                      </ueabf:AdvancedFilterArgument.Condition1>
+                                      <ueabf:AdvancedFilterArgument.Condition2>
+                                        <ueabf:AdvancedFilterCondition Value="{x:Null}" Operator="NONE" />
+                                      </ueabf:AdvancedFilterArgument.Condition2>
+                                    </ueabf:AdvancedFilterArgument>
+                                  </ueabf:FilterArgument.AdvancedFiltersArgument>
+                                  <ueabf:FilterArgument.BasicFiltersArgument>
+                                    <ueabf:BasicFilterArgument>
+                                      <ueabf:BasicFilterArgument.BasicFilters>
+                                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="1">
+                                          <InArgument x:TypeArguments="x:String">
+                                            <Literal x:TypeArguments="x:String" Value="" />
+                                          </InArgument>
+                                        </scg:List>
+                                      </ueabf:BasicFilterArgument.BasicFilters>
+                                    </ueabf:BasicFilterArgument>
+                                  </ueabf:FilterArgument.BasicFiltersArgument>
+                                </ueabf:FilterArgument>
+                              </ueab:FilterX.FilterArgument>
+                            </ueab:FilterX>
+                            <ueab:DeleteRowsX RowPositions="{x:Null}" DeleteRowsOption="Visible" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,139.2" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" Range="[Excel.Sheet(&quot;Hoja1&quot;)]" />
+                            <ueab:FilterX ColumnName="{x:Null}" FilterArgument="{x:Null}" ClearFilter="True" DisplayName="Filter" HasHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,170.4" sap2010:WorkflowViewState.IdRef="FilterX_2" Range="[Excel.Sheet(&quot;Hoja1&quot;)]" />
+                            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                            <ueab:CopyPasteRangeX DestinationRange="[Excel.Sheet(&quot;Hoja1&quot;).Range(&quot;F2:F16&quot;)]" DisplayName="Copy/Paste Range" sap:VirtualizedContainerService.HintSize="433.6,241.6" sap2010:WorkflowViewState.IdRef="CopyPasteRangeX_1" PasteOptions="Formulas" SourceRange="[Excel.Sheet(&quot;Hoja1&quot;).Range(&quot;H1&quot;)]" Transpose="False" />
+                          </Sequence>
+                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="496,90.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                          <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="496,169.6" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;Hoja1&quot;).Range(&quot;A1:F16&quot;)]" SaveTo="[lectura]" />
+                        </Sequence>
+                      </ActivityAction>
+                    </ueab:ExcelApplicationCard.Body>
+                  </ueab:ExcelApplicationCard>
+                  <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="592,90.4" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                </ueab:SequenceX>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[lectura]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="680,4567.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1" MaxIterations="5">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Cuerpo" sap:VirtualizedContainerService.HintSize="646.4,4379.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="sd:DataTable" Name="FechaFila" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[row(&quot;DESCRIPCIÓN&quot;).ToString =&quot;mov_y_saldos_csv_v2&quot;]" sap:VirtualizedContainerService.HintSize="603.2,4289.6" sap2010:WorkflowViewState.IdRef="If_2">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="569.6,3400.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If Condition="[Convert.ToDouble(row(&quot;Condicion&quot;)) &gt;= 1.0]" sap:VirtualizedContainerService.HintSize="526.4,3311.2" sap2010:WorkflowViewState.IdRef="If_1">
+                                <If.Then>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="492.8,2224.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence sap:VirtualizedContainerService.HintSize="449.6,2135.2" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ACCIONES'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28d0787c-beb5-4c7a-9900-c68a054d5677" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://sib1.interbanking.com.ar/index.jsp" DesignTimeRectangle="1690, 497, 25, 38" DesignTimeScaleFactor="1.25" FriendlyName="'chrome.exe INTERbanking'" Guid="23bd3ce0-ad6f-4898-aa79-b7cea9263beb" ImageBase64="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" InformativeScreenshot="dd7c22bdf89052b4aef15c07baa2da87.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INTERbanking - ( Build 76.2.127)' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CvTextArgument="ACCIONES" CvType="Text" DesignTimeRectangle="1613, 417, 200, 63" ElementType="Text" FriendlyName="'ACCIONES'" FullSelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;th&amp;gt;table' idx='6' tableRow='7' tag='TABLE' /&gt;&lt;webctrl aaname='ACCIONES' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='ACCIONES' type='' tag='TD' class='gridHead' check:innerText='ACCIONES' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'outline item  Descargas'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target Element="{x:Null}" Id="da191b08-ade9-4e94-aaca-b5727bf19b37" InformativeScreenshot="a1eeaf802d52d29f812f87915dcb834d" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd ctrlid='41477' /&gt;">
+                                            <ui:Target.ClippingRegion>
+                                              <ui:Region Rectangle="0, 8, 24, 20" />
+                                            </ui:Target.ClippingRegion>
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'Edit'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="del" KeyModifiers="None" SpecialKey="True">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="eaf7fbed-1b4c-467a-a1da-d247deb59099" InformativeScreenshot="a2fd697167863363ad1749d2291aee49" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd ctrlid='41477' /&gt;&lt;wnd ctrlid='41477' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                                      <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'ToolbarWindow32'" sap:VirtualizedContainerService.HintSize="387.2,156" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="\\sys-fs\CORP\WorkGroup\ADM&amp;FINANZAS\05 - FINANZAS\13- MOVIMIENTOS DE BANCOS\AVANT\Listados">
+                                        <ui:TypeInto.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="6e0e7186-5957-4089-81cb-1b1b05116d78" InformativeScreenshot="20d242e44ae40b55734df78d8731bc45" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd ctrlid='41477' /&gt;&lt;wnd ctrlid='41477' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:TypeInto.Target>
+                                      </ui:TypeInto>
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'ToolbarWindow32'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="63c5f98b-c896-421e-94b9-4a49519599e6" InformativeScreenshot="20d242e44ae40b55734df78d8731bc45" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd ctrlid='41477' /&gt;&lt;wnd ctrlid='41477' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                        <ui:Click.CursorPosition>
+                                          <ui:CursorPosition Position="Center">
+                                            <ui:CursorPosition.OffsetX>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetX>
+                                            <ui:CursorPosition.OffsetY>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:CursorPosition.OffsetY>
+                                          </ui:CursorPosition>
+                                        </ui:Click.CursorPosition>
+                                        <ui:Click.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="22258dd4-bda4-4321-90fb-efe3fe7012a7" InformativeScreenshot="ba203dcf0e99abbbc028d68d18a4cf30" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Guardar como' /&gt;&lt;wnd ctrlid='1' title='&amp;amp;Guardar' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:Click.Target>
+                                      </ui:Click>
+                                      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="SendHotkey_3" Key="f5" KeyModifiers="None" SpecialKey="True">
+                                        <ui:SendHotkey.Target>
+                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b746931-bd75-4515-a729-444d5fd14870" InformativeScreenshot="18a84b7907cdf6f826541c30c30f1a98" Selector="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='DIV' /&gt;">
+                                            <ui:Target.TimeoutMS>
+                                              <InArgument x:TypeArguments="x:Int32" />
+                                            </ui:Target.TimeoutMS>
+                                            <ui:Target.WaitForReady>
+                                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                                            </ui:Target.WaitForReady>
+                                          </ui:Target>
+                                        </ui:SendHotkey.Target>
+                                      </ui:SendHotkey>
+                                      <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                                    </Sequence>
+                                  </Sequence>
+                                </If.Then>
+                                <If.Else>
+                                  <Sequence sap:VirtualizedContainerService.HintSize="377.6,903.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ACCIONES'" sap:VirtualizedContainerService.HintSize="334.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28d0787c-beb5-4c7a-9900-c68a054d5677" Version="V3">
+                                      <uix:NClick.Target>
+                                        <uix:TargetAnchorable BrowserURL="https://sib1.interbanking.com.ar/repFileDownload.do?historico=N&amp;agregarShortCut=Y" CvType="Icon" DesignTimeRectangle="1761, 431, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG delete'" FullSelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tableRow='7' tag='TABLE' /&gt;&lt;webctrl id='delete' tableRow='9' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='delete' type='' tag='IMG' class='' aaname='Eliminar' /&gt;" Guid="3e9678e5-ba68-4857-89ce-7b40d3668446" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOySURBVFhH7ZeHT1NRFMb95xTEEeOMAZUhlD3doEXEihgFQTYUBQQEHAwtU0U2iBhRkKUIyF4WCpS2fN5z+9q0FqQvUqMJX3KSvr573/29e896O/CPaBvkV/2/IKsaDXq+DKK6rgl5xS+Q9bjEaHklL1DxpgFfhkag0WqFGdZJFIhubQ1Do2PILHgKn7BI7HH2xk5Hd6PtdfGB5OJVPCgqxsTUNLQiYESBqFdXUfi8Ai4hYdjl5IHdp7ywz9XXaA7sehcDot/V9U2YVyqFmZtLFMjyihrRSXIc8QqGo/953EzKwMvGFqPFZebgsGcQ36m0vCKMjE0IMzeXSJAVXI9PxSFJEDwvReCxogo/lAtGU7yqg+vZy3Bw9kJiVj4/RmtlATI1M4uGtx1mTmgw+aMncD8v5b5w3PcspHcSzO5fi0vBUe8Q2J2QwO+KDPH3c83uk+U+e86fPzE9I6yolwVI5+deRLIHmjrhVhodm+xeGjo+dQsr6mUB0vq+ExeiYpjD+cCevRlNJsckRzR1TGuNjonm03PsT3ry3ZTGJPBdMZUFyIJKhb6v31BeW4+A8BvY7+aLU8GhuCvPMXNMay0xOx+OARc4xKXouyzqKtHL8tCKWi2sqJcFyBrLFRSm4ywPhMck4qBHILxZznhWUWPmmNYavRD5Fe1obEY2uvoGLCBIFiAGmUYIOV5FbYNwR5zetLTD82LEppEkCoR2i6KKtnZwZBSLS0vCaL1US8sYHh1HV+8AZubmodFobQNiyKyUQyJik/Chu0cYrden3n7cSs7EMe8zKKupxTSDsQmIIbNSrgi8GsXSeLMwWq+Gtg74XpbxyEjNLcTw2LitQH7vN+stug3y10Bk99h/rML6SWWoZE2Qqepa2aLMkfmiLJHZEESN22kPuLMGRUTjdXObMFqvxvb3LBtH8XoiZ83T9/FJ24BodTp8ZCFaXPUStQxienZOGK3XJMsx9W3vkF+qwMC3YQ5uExAS9ayUrJSLi/zaVDoGqmJJjko8/SZtKYhX6DWUVL0W7lgv6nGp8Lmdu/JnIFEJ6bz1c2LVM+VhIRZVS6Jsih1dQVk5by0JJDmngJeA9bQhCKXz/BIFnENCeV9y4LQ/BxJj1NdS9bZj/Qj1N/SpMfdj/YZ6QxCdbo1/n1CDTLXDtMsSa4ckgbzro2OhQrieNgQhkWO2d3bxD6eY9CxEJ8tFG83LflKKdx+7+S5vpN+CGETnTW/TPzgk2qjwKRcsI+xXWQXyN7QNYi7gJ9Fuz4+zzuJWAAAAAElFTkSuQmCC" InformativeScreenshot="51c3e5632de7365b3db2323c2f9bd72c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INTERbanking - ( Build 76.2.127)' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CvTextArgument="ACCIONES" CvType="Text" DesignTimeRectangle="1613, 346, 200, 63" ElementType="Text" FriendlyName="'ACCIONES'" FullSelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;th&amp;gt;table' idx='6' tableRow='7' tag='TABLE' /&gt;&lt;webctrl aaname='ACCIONES' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='ACCIONES' type='' tag='TD' class='gridHead' check:innerText='ACCIONES' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                        </uix:TargetAnchorable>
+                                      </uix:NClick.Target>
+                                    </uix:NClick>
+                                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="334.4,157.6" sap2010:WorkflowViewState.IdRef="SendHotkey_4" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b746931-bd75-4515-a729-444d5fd14870" InformativeScreenshot="7ae67e4694f6be5d62ff569214cbe1aa" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='INTERbanking - ( Build 76.2.128) - Google Chrome' /&gt;&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                    </ui:SendHotkey>
+                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_11" />
+                                    <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="334.4,157.6" sap2010:WorkflowViewState.IdRef="SendHotkey_5" Key="f5" KeyModifiers="None" SpecialKey="True">
+                                      <ui:SendHotkey.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b746931-bd75-4515-a729-444d5fd14870" InformativeScreenshot="6b0d6526d3d970bfd319e3a69fba042e" Selector="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='mensajes' tag='FRAME' /&gt;&lt;webctrl tag='DIV' /&gt;">
+                                          <ui:Target.TimeoutMS>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:Target.TimeoutMS>
+                                          <ui:Target.WaitForReady>
+                                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                                          </ui:Target.WaitForReady>
+                                        </ui:Target>
+                                      </ui:SendHotkey.Target>
+                                    </ui:SendHotkey>
+                                  </Sequence>
+                                </If.Else>
+                              </If>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap:VirtualizedContainerService.HintSize="377.6,705.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ACCIONES'" sap:VirtualizedContainerService.HintSize="334.4,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="28d0787c-beb5-4c7a-9900-c68a054d5677" Version="V3">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="https://sib1.interbanking.com.ar/repFileDownload.do?historico=N&amp;agregarShortCut=Y" CvType="Icon" DesignTimeRectangle="1761, 431, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FriendlyName="'IMG delete'" FullSelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tableRow='7' tag='TABLE' /&gt;&lt;webctrl id='delete' tableRow='9' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='delete' type='' tag='IMG' class='' aaname='Eliminar' /&gt;" Guid="3e9678e5-ba68-4857-89ce-7b40d3668446" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOySURBVFhH7ZeHT1NRFMb95xTEEeOMAZUhlD3doEXEihgFQTYUBQQEHAwtU0U2iBhRkKUIyF4WCpS2fN5z+9q0FqQvUqMJX3KSvr573/29e896O/CPaBvkV/2/IKsaDXq+DKK6rgl5xS+Q9bjEaHklL1DxpgFfhkag0WqFGdZJFIhubQ1Do2PILHgKn7BI7HH2xk5Hd6PtdfGB5OJVPCgqxsTUNLQiYESBqFdXUfi8Ai4hYdjl5IHdp7ywz9XXaA7sehcDot/V9U2YVyqFmZtLFMjyihrRSXIc8QqGo/953EzKwMvGFqPFZebgsGcQ36m0vCKMjE0IMzeXSJAVXI9PxSFJEDwvReCxogo/lAtGU7yqg+vZy3Bw9kJiVj4/RmtlATI1M4uGtx1mTmgw+aMncD8v5b5w3PcspHcSzO5fi0vBUe8Q2J2QwO+KDPH3c83uk+U+e86fPzE9I6yolwVI5+deRLIHmjrhVhodm+xeGjo+dQsr6mUB0vq+ExeiYpjD+cCevRlNJsckRzR1TGuNjonm03PsT3ry3ZTGJPBdMZUFyIJKhb6v31BeW4+A8BvY7+aLU8GhuCvPMXNMay0xOx+OARc4xKXouyzqKtHL8tCKWi2sqJcFyBrLFRSm4ywPhMck4qBHILxZznhWUWPmmNYavRD5Fe1obEY2uvoGLCBIFiAGmUYIOV5FbYNwR5zetLTD82LEppEkCoR2i6KKtnZwZBSLS0vCaL1US8sYHh1HV+8AZubmodFobQNiyKyUQyJik/Chu0cYrden3n7cSs7EMe8zKKupxTSDsQmIIbNSrgi8GsXSeLMwWq+Gtg74XpbxyEjNLcTw2LitQH7vN+stug3y10Bk99h/rML6SWWoZE2Qqepa2aLMkfmiLJHZEESN22kPuLMGRUTjdXObMFqvxvb3LBtH8XoiZ83T9/FJ24BodTp8ZCFaXPUStQxienZOGK3XJMsx9W3vkF+qwMC3YQ5uExAS9ayUrJSLi/zaVDoGqmJJjko8/SZtKYhX6DWUVL0W7lgv6nGp8Lmdu/JnIFEJ6bz1c2LVM+VhIRZVS6Jsih1dQVk5by0JJDmngJeA9bQhCKXz/BIFnENCeV9y4LQ/BxJj1NdS9bZj/Qj1N/SpMfdj/YZ6QxCdbo1/n1CDTLXDtMsSa4ckgbzro2OhQrieNgQhkWO2d3bxD6eY9CxEJ8tFG83LflKKdx+7+S5vpN+CGETnTW/TPzgk2qjwKRcsI+xXWQXyN7QNYi7gJ9Fuz4+zzuJWAAAAAElFTkSuQmCC" InformativeScreenshot="51c3e5632de7365b3db2323c2f9bd72c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='INTERbanking - ( Build 76.2.127)' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CvTextArgument="ACCIONES" CvType="Text" DesignTimeRectangle="1613, 346, 200, 63" ElementType="Text" FriendlyName="'ACCIONES'" FullSelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;th&amp;gt;table' idx='6' tableRow='7' tag='TABLE' /&gt;&lt;webctrl aaname='ACCIONES' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl name='applicationFrame' tag='FRAME' /&gt;&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='ACCIONES' type='' tag='TD' class='gridHead' check:innerText='ACCIONES' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                              </uix:NClick>
+                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_12" />
+                              <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'DIV'" sap:VirtualizedContainerService.HintSize="334.4,157.6" sap2010:WorkflowViewState.IdRef="SendHotkey_6" Key="enter" KeyModifiers="None" SpecialKey="True">
+                                <ui:SendHotkey.Target>
+                                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2b746931-bd75-4515-a729-444d5fd14870" InformativeScreenshot="7ae67e4694f6be5d62ff569214cbe1aa" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='INTERbanking - ( Build 76.2.128) - Google Chrome' /&gt;&lt;wnd aaname='Horizontal' cls='Chrome_RenderWidgetHostHWND' title='Chrome Legacy Window' /&gt;">
+                                    <ui:Target.TimeoutMS>
+                                      <InArgument x:TypeArguments="x:Int32" />
+                                    </ui:Target.TimeoutMS>
+                                    <ui:Target.WaitForReady>
+                                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                                    </ui:Target.WaitForReady>
+                                  </ui:Target>
+                                </ui:SendHotkey.Target>
+                              </ui:SendHotkey>
+                              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_13" />
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADUAAAA3CAYAAACsLgJ7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALiIAAC4iAari3ZIAAAELSURBVGhD7ZrBDYMwEARdSkqhlCiVpIP0kSYohX+aIPvYh2WdBeZ8soV2pPkeO08QqQfftC/wPYuc5YPH9lnkLB84pKhoOcsHDikqWs7ygUOKipazfOCQoqLlLB84pKhoOcsHDikqWs7ygUO3jIp49digOfpIzpoPjFvLsWflifnAuOtRr/RbL/rh80PAOFfUftGVzw8B4xSVq6hCRbWCcYrKVVSholrBOEXlKqpQUa1gnKJyFVWoqFYw7pZRT2h9kDl02igXxtiz3jJqg+/OLpzlA4eswaPs8w+EcXikiqpiHB6poqoYh0eqqCrG4ZEqqopxeKSKqmIcHqmiqhiHR9otapnIB2c5SOkPMxjUnzriiwAAAAAASUVORK5CYII=" InformativeScreenshot="299b60d2f0ecba8d73b585d370dc1f81.jpg" Selector="&lt;html app='chrome.exe' title='INTERbanking - ( Build 76.2.128)' /&gt;" Title="INTERbanking - ( Build 76.2.127)" Url="https://sib1.interbanking.com.ar/index.jsp" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+      <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="838.4,90.4" sap2010:WorkflowViewState.IdRef="Delay_14" />
+      <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SpecialKey="{x:Null}" Activate="True" DisplayName="Send Hotkey 'page tab'" sap:VirtualizedContainerService.HintSize="838.4,154.4" sap2010:WorkflowViewState.IdRef="SendHotkey_7" Key="w" KeyModifiers="Ctrl">
+        <ui:SendHotkey.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8b70a56d-99fe-45f7-b861-fab7dfa8d78d" InformativeScreenshot="6cd470e948d55cb9a66d8d403cb800bc" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='INTERbanking - ( Build 76.2.128) - Google Chrome' /&gt;&lt;ctrl name='INTERbanking - ( Build 76.2.128) - Google Chrome - Alan' role='pane' /&gt;&lt;ctrl name='INTERbanking - ( Build 76.2.128)' role='page tab' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:SendHotkey.Target>
+      </ui:SendHotkey>
+    </Sequence>
+  </Sequence>
+</Activity>
